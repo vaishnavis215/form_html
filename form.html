@@ -7,13 +7,16 @@
 </head>
 <body>
     <form>
-        
+
         <fieldset>
             <legend>Registration Form</legend>
-        
-        Full Name:<input type="text" name="name" placeholder="first name"> <input type="text" name="father's name" placeholder="middle name"> <input type="text" name="surname" placeholder="last name">
+
+        Full Name:<input type="text" name="name" placeholder="first name" required=""> <input type="text" name="father's name" placeholder="middle name" required=""> <input type="text" name="surname" placeholder="last name" required="">
         <br>
         <br>
+        Date of birth:<input type="date" name="date"/><br><br>
+        Email-id:<input type="email" name="email"/><br>
+        phone number:<input type="number" name="number" maxlength="10"/><br>
         Address: <br>
         Country:<select>
             <option value="select the Country"> Select the Country</option>
@@ -22,7 +25,7 @@
             <option value="Pakistan">Pakistan</option>
             <option value="Japan">Japan</option>
             <option value="chin">Chin</option>
-            <option value="ozisha">Odisha</option>
+            <option value="bhutan">Odisa</option>
             <option value="london">London</option>
         </select><br><br>
         State:<select>
@@ -52,8 +55,8 @@
         <input type="checkbox" value="skills">Linux
         <input type="checkbox" value="skills">Python development
         <input type="checkbox" value="skills">Bussiness analysis <br><br>
-        
-        Resume/CV: <input type="file" name="image">
+
+        Resume/CV: <input type="file" name="image" required="">
         <br><br>
         <input type="Submit" value="Submit">
     </fieldset>
